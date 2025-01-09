@@ -1,11 +1,11 @@
 services:
   # A Docker web service
   - type: web
-    name: TheMovieProviderBot
+    name: MJMovieBot
     env: python
     startCommand: python3 bot.py
     buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/HarshalPurohitEdits/TheMovieProviderBot.git # optional
+    repo: https://github.com/HarshalPurohitEdits/MJMovieBot.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: main # optional (defaults to master)
