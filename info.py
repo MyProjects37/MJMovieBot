@@ -13,16 +13,16 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('28842227', ''))
+API_HASH = environ.get('0f4d6c063dbad2f318198ff70cdefa02', '')
+BOT_TOKEN = environ.get('7926196325:AAEPyZAzf_JgxyL1yJIrNOHwSdZHug2GhEs', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/65fe86fc02a73f6fcf0ce.jpg https://telegra.ph/file/6fa70325813885809a64a.jpg https://telegra.ph/file/e06afc1e7abbcd8d4213a.jpg https://telegra.ph/file/3f4040b320d9b7840200a.jpg https://telegra.ph/file/3950fad740fb8ea894df7.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/f07a9a7d4b15c6f59c8c0-c7994663a15dee76a9.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb6511006022.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
@@ -46,13 +46,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('mongodb+srv://Professor:Hiihello07@cluster0.3asxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
+DATABASE_NAME = environ.get('Professor', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/MJUniversal') # How to open tutorial link for verification
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantearn.in')
@@ -123,7 +123,7 @@ else:
     URL = "http://{}/".format(FQDN)
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', ''))
+PREMIUM_LOGS = int(environ.get('-1002116943754', ''))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
