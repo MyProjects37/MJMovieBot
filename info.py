@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('28842227', ''))
-API_HASH = environ.get('0f4d6c063dbad2f318198ff70cdefa02', '')
-BOT_TOKEN = environ.get('7926196325:AAEPyZAzf_JgxyL1yJIrNOHwSdZHug2GhEs', "")
+API_ID = int(environ.get('', ''))
+API_HASH = environ.get('', '')
+BOT_TOKEN = environ.get('', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -46,8 +46,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('mongodb+srv://Professor:Hiihello07@cluster0.3asxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
-DATABASE_NAME = environ.get('Professor', "")
+DATABASE_URI = environ.get('', "")
+DATABASE_NAME = environ.get('', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
@@ -123,7 +123,7 @@ else:
     URL = "http://{}/".format(FQDN)
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('-1002116943754', ''))
+PREMIUM_LOGS = int(environ.get('', ''))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
